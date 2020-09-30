@@ -1,0 +1,33 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    /* width: 100%; */
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+.all__articles{
+    background: #07689F;
+    padding: 4rem 1rem;
+}
+
+.all__articles .card__btn{
+    max-width: 400px;
+    margin:auto
+
+}
