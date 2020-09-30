@@ -1,0 +1,268 @@
+/* GENERAL */
+@font-face {
+    font-family: "Sansita_links";
+    src: url('../fonts/SansitaSwashed_Link.ttf');
+}
+
+@font-face {
+    font-family: "Sansita_title";
+    src: url('../fonts/SansitaSwashed_title.ttf');
+}
+
+@font-face {
+    font-family : "Roboto";
+    src: url('../fonts/Roboto.ttf');
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #D9D7DD;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: Sansita_links;
+    font-size: 24px;
+}
+
+
+/* NAVBAR */
+.navbar {
+    background: #07689F;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15%;
+    min-height: 50px;
+}
+
+.logo img {
+    width: 75%;
+    height: 80%;
+}
+
+.logo {
+    padding-left: 2%;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    overflow: hidden;
+}
+
+.nav_large_screen li {
+    padding: 2rem 2rem 2rem 2rem;
+
+}
+
+.nav_large_screen {
+    display: none;
+}
+
+.navbar input[type="checkbox"],
+.navbar input[type="checkbox"]+label img[class^="menu_"] {
+    display: none;
+}
+
+.navbar input[type="checkbox"]:checked~.nav_small_screen {
+    display: block;
+}
+
+.navbar input[type="checkbox"]:checked+label .menu_close {
+    display: inherit;
+}
+
+.navbar input[type="checkbox"]:not(:checked)+label .menu_open {
+    display: inherit;
+}
+
+.navbar input[type="checkbox"]:not(:checked)~.nav_small_screen {
+    display: none;
+}
+
+.nav_button_menu img {
+    width: 48px;
+    height: 48px;
+}
+
+.nav_button_menu {
+    padding-right: 2rem;
+}
+
+.menu_close {
+    display: none;
+}
+
+.nav_small_screen {
+    display: block;
+    background: #07689F;
+    position: absolute;
+    right: 0;
+    top: 15%;
+    width: 100%;
+
+}
+
+.nav_small_screen ul {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.nav_small_screen ul li {
+    border: 2px solid grey;
+    width: 100%;
+    text-align: center;
+    padding: 2%;
+}
+
+.navbar li:hover {
+    cursor: pointer;
+}
+
+.nav_large_screen li:hover a {
+    text-decoration: underline;
+    color: #FFC93C;
+}
+
+/* BODY ARTICLE ONLY */
+
+.body_article_only {
+    text-align: center;
+    overflow: auto;
+    padding-top : 2%;
+    font-family: Roboto;
+}
+
+.body_article_only h1 {
+    font-family : Sansita_title;
+}
+
+.body_article_only img {
+    width : 100%;
+    height : 100%;
+}
+
+.description {
+    width : 80%;
+    margin: 0 auto;
+    text-align: justify;
+    padding-top : 2%;
+    padding-bottom : 2%;
+}
+
+.body_article_only .image_article {
+    height : 40%;
+    margin-bottom : 2%;
+    margin-top : 2%;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 1200px) {
+    .nav_large_screen {
+        display: block;
+    }
+
+    .nav_button_menu,
+    .nav_small_screen,
+    .navbar input[type="checkbox"]:checked~.nav_small_screen {
+        display: none;
+    }
+
+    .foot_large_screen {
+        display: block;
+    }
+
+    .foot_small_screen {
+        display: none;
+    }
+
+    .description {
+        width : 60%;
+    }
+
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .nav_button_menu img {
+        width: 64px;
+        height: 64px;
+    }
+
+    .foot_large_screen {
+        display: none;
+    }
+
+    .description {
+        width: 70%;
+    }
+}
+
+/* FOOTER */
+
+.footer {
+    background: #07689F;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    overflow: hidden;
+}
+
+.foot_large_screen li {
+    padding: 2rem 2rem 2rem 2rem;
+}
+
+
+.foot_large_screen {
+    display: none;
+}
+
+.foot_small_screen {
+    display: block;
+    background: #07689F;
+    position: absolute;
+    right: 0;
+    top: 15%;
+    width: 100%;
+
+}
+
+.foot_small_screen ul {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.foot_small_screen ul li {
+    border: 2px solid grey;
+    width: 100%;
+    text-align: center;
+    padding: 1%;
+}
+
+.footer li:hover {
+    cursor: pointer;
+}
+
+.foot_large_screen li:hover a {
+    text-decoration: underline;
+    color: #FFC93C;
+}
