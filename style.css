@@ -137,17 +137,17 @@ a {
     justify-content: space-around;
 }
 
-label, textarea {
+.contactSection label, textarea {
     font-size: 14px;
 }
 
-input, textarea::placeholder {
+.contactSection input, textarea::placeholder {
     font-family: "Sansita_links";
     font-size: 15px;
     letter-spacing: 1px;
 }
 
-textarea {
+.contactSection textarea {
     width: 500px;
     height: 300px;
     padding: 10px;
@@ -156,13 +156,13 @@ textarea {
     border: 1px solid #ccc;
 }
 
-label {
+.contactSection label {
     margin-bottom: 5px;
     border-radius: 5px;
     border: 1px solid #ccc;
 }
 
-input {
+.contactSection input {
     width: 500px;
     margin: 10px auto;
     padding: 5px;
@@ -187,7 +187,7 @@ input {
     cursor: pointer;
 }
 
-iframe {
+.contactSection iframe {
     margin-top: 10px;
     -webkit-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.75);
