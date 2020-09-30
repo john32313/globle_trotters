@@ -1,3 +1,11 @@
+@keyframes fullwidth-header-bounce {
+    0% {transform: translateY(0%);}
+    12.5% {transform: translateY(30%);}
+    25% {transform: translateY(0%);}
+    37.5% {transform: translateY(30%);}
+    50% {transform: translateY(0%);}
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -38,7 +46,7 @@ a {
     color: #FFC93C;
     margin: 0;
     font-family: Sansita_title;
-    font-size: 7vw;
+    font-size: 8vw;
     margin: auto;
 
 }
@@ -49,13 +57,17 @@ a {
     }
 }
 
-.icon_down{
-    margin: 1em auto;
+.icon_down {
+    margin: 3em auto;
 }
-.icon_down a{
+
+.icon_down a {
     color: #FFC93C;
 }
 
+.icon_down a i {
+    animation: fullwidth-header-bounce 2.2s ease-out infinite;
+}
 
 .link__articles {
     background: #FFC93C;
