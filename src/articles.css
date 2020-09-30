@@ -18,3 +18,11 @@ a {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
+.title_all_articles{
+  font-family: Sansita_title;
+  background: #FFC93C;
+  color: #07689F;
+  padding: 4rem 1rem;
+  text-align: center;
+}

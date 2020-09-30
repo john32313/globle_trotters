@@ -20,14 +20,51 @@ a {
 }
 
 
+.header_hero {
+    min-height: 800px;
+    background-image: url('../Image/lovetrotters-vanuatu-tanna-yasur-volcano-05755.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-.all__articles{
-    background: #07689F;
+
+.header_hero h1 {
+    color: #FFC93C;
+    margin: 0;
+    font-family: Sansita_title;
+    font-size: 7vw;
+    margin: auto;
+
+}
+
+@media (max-width: 768px) {
+    .header_hero {
+        min-height: 700px;
+    }
+}
+
+.icon_down{
+    margin: 1em auto;
+}
+.icon_down a{
+    color: #FFC93C;
+}
+
+
+.link__articles {
+    background: #FFC93C;
     padding: 4rem 1rem;
 }
 
-.all__articles .card__btn{
+.link__articles .card__btn {
+    background: #07689F;
+    color: #FFC93C;
     max-width: 400px;
-    margin:auto
-
+    margin: auto
 }
