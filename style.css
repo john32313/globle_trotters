@@ -123,6 +123,77 @@ a {
     color : #FFC93C;
 }
 
+/* CONTACT */
+
+.contactSection > h2{
+    font-family: "Sansita_title";
+    text-align: center;
+    font-size: 50px;
+    margin: 75px 0 125px 0;
+}
+
+.formFlex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contactSection label, textarea {
+    font-size: 14px;
+}
+
+.contactSection input, textarea::placeholder {
+    font-family: "Sansita_links";
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.contactSection textarea {
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contactSection label {
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contactSection input {
+    width: 500px;
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#contact input:hover, textarea:hover {
+    border:1px solid #07689F;
+}
+
+.submit {
+    font-family: "Sansita_links";
+    font-size: 15px;
+    width: 125px;
+    display: block;
+    margin: 10px auto 0;
+    padding: 5px;
+    background-color: #FFC93C;
+    border: 1px solid slategray;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.contactSection iframe {
+    margin-top: 10px;
+    -webkit-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.75);
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 1200px) {
@@ -136,6 +207,14 @@ a {
         display: none;
     }
 
+    .foot_large_screen {
+        display : block;
+    }
+
+    .foot_small_screen{
+        display : none;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -144,4 +223,68 @@ a {
         width : 64px;
         height : 64px;
     }
+
+    .foot_large_screen{
+        display : none;
+    }
+}
+
+/* FOOTER */
+
+.footer {
+    background : #07689F;
+    display : flex;
+    align-items: center;
+    justify-content: space-between;
+    height : 10%;
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+
+.footer ul {
+    list-style: none;
+    display : flex;
+    overflow: hidden;
+}
+
+.foot_large_screen li {
+    padding : 2rem 2rem 2rem 2rem;
+}
+
+
+.foot_large_screen {
+    display: none;
+}
+
+.foot_small_screen {
+    display : block;
+    background : #07689F;
+    position: absolute;
+    right : 0;
+    top : 15%;
+    width: 100%;
+    
+}
+
+.foot_small_screen ul {
+    flex-direction: column;
+    padding: 0;
+    margin : 0;
+}
+
+.foot_small_screen ul li {
+    border :2px solid grey;
+    width: 100%;
+    text-align : center;
+    padding : 1%;
+}
+
+.footer li:hover {
+    cursor: pointer;
+}
+
+.foot_large_screen li:hover a {
+    text-decoration: underline;
+    color : #FFC93C;
 }
