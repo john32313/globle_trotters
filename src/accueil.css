@@ -29,7 +29,7 @@ a {
 
 
 .header_hero {
-    min-height: 720px;
+    min-height: 800px;
     background-image: url('../Image/lovetrotters-vanuatu-tanna-yasur-volcano-05755.jpg');
     background-repeat: no-repeat;
     background-position: center center;
@@ -58,7 +58,7 @@ a {
 }
 
 .icon_down {
-    margin: 3em auto;
+    margin: 9em auto;
 }
 
 .icon_down a {
