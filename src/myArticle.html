@@ -6,7 +6,10 @@
     <meta name="author" content="">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../src/myArticle.css">
+    <link rel="stylesheet" href="./myArticle.css">
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="./cards.css">
+    <link rel="stylesheet" href="./accueil.css">
 
 </head>
 
@@ -97,23 +100,82 @@
             Bon vent !
 
         </div>
+        <header class="small_title">
+            <h2>Partagez nous votre avis !</h2>
+        </header>
+        <section class="section_formcomm">
+            <form class="form_commentaire">
+                <textarea placeHolder="COMMENTAIRE"></textarea>
+            <div class="row_form_input">
+                <input type="text" placeholder="Nom : ">
+                <input type="mail" placeholder="Adresse mail : ">
+            </div>
+                <button type="button" name="envoyer" value="envoyer" class="submit">Envoyer <span>&rarr;</span></button>
+            </form>
 
-        <h2>Partagez nous votre avis ! </h2>
-        <form id="contact">
-            <input id="user" name="username" type="text" placeholder="Nom:" required />
-            <br />
-            <input id="email" type="text" name="email" placeholder="Mail:" required />
-            <br />
-            <input id="sujet" type="text" name="sujet" placeholder="Sujet:" required />
-            <br />
-            <textarea id="message" name="message" placeholder="Votre Message:" rows="5" cols="50" required></textarea>
-            <br />
-            <button type="submit" name="envoyer" value="envoyer" class="submit">Envoyer</button>
-            <br />
-        </form>
+            <div class="commentary">
+                <img alt="logocomment" src="../Image/logoCommentaire.png">
+                <div class="text_comment">
+                    <h3>FAVRE</h3> <em>le 12 septembre 2018 à 10h10</em>
+                    <p>Bonjour,<br/>
+                        Merci pour tous ces très beaux récits !<br/>
+                        Une petite question : comment avez-vous organisé vos transferts d’île en île au Vanuatu ?
+                        Est-ce que Air Vanuatu propose un pass ?<br/>
+                        Merci par avance pour vos précieux conseils !<br/>
+                        Véronique</p>
+                    <button type="button" name="envoyer" value="envoyer" class="submit">Répondre
+                        <span>&rarr;</span></button>
+                </div>
+            </div>
+            <div class="commentary">
+                <img alt="logocomment" src="../Image/logoCommentaire.png">
+                <div class="text_comment">
+                    <h3>Santo Sups</h3> <em>sur 04 février 2015 à 8h39</em>
+                    <p>As always…incredible images!</p>
+                    <button type="button" name="envoyer" value="envoyer" class="submit">Répondre
+                        <span>&rarr;</span></button>
+                </div>
+            </div>
+            <div class="commentary">
+                <img alt="logocomment" src="../Image/logoCommentaire.png">
+                <div class="text_comment">
+                    <h3>Zouzou Ben</h3> <em>sur 03 février 2015 à 23h14</em>
+                    <p>J'adoooore !!! Tres belles photos , paysages incroyables comme d'habitude. D'apres votre exaltant
+                        recit vous avez l'air d'avoir bcps apprécié le VANUATU , n'est pas??? En tout cas votre joie de
+                        vivre est un réel plaisir .. bon vent</p>
+                    <button type="button" name="envoyer" value="envoyer" class="submit">Répondre
+                        <span>&rarr;</span></button>
+                </div>
+            </div>
+            <div class="commentary">
+                <img alt="logocomment" src="../Image/logoCommentaire.png">
+                <div class="text_comment">
+                    <h3>Françoise Dorval</h3> <em> sur 03 février 2015 à 22h53</em>
+                    <p>Super! Et je vous aime tous les deux votre jeunesse intelligente,votre débrouillardise et toutes
+                        ces belles photos bien documentées pour notre plus grand bonheur merci! De tout cœur</p>
+                    <button type="button" name="envoyer" value="envoyer" class="submit">Répondre
+                        <span>&rarr;</span></button>
+                </div>
+            </div>
+            <div class="commentary">
+                <img alt="logocomment" src="../Image/logoCommentaire.png">
+                <div class="text_comment">
+                    <h3>Mohamed Amine M'HAMDI</h3> <em>sur 08 juin 2018 à 20h27</em>
+                    <p>It looks terrific, make me wanna visit one day. Keep up exploring because we are curious species.
+                    </p>
+                    <button type="button" name="envoyer" value="envoyer" class="submit">Répondre
+                        <span>&rarr;</span></button>
+                </div>
+            </div>
+
+            
+        </section>
 
     </section>
 
+    <div class="link__articles">
+        <a class="card__btn" href="../src/articles.html">Voir tous les articles <span>&rarr;</span></a>
+    </div>
     <!-- Footer -->
     <footer class="footer">
         <div class="foot_small_screen">

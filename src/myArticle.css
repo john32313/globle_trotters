@@ -42,6 +42,12 @@ a {
     font-family: Roboto;
 }
 
+
+.commentary .submit
+{
+    margin-right : 0;
+}
+
 .body_article_only h1 {
     font-family : Sansita_title;
     color: #07689F;
@@ -54,7 +60,8 @@ a {
     border-radius : 55px;
 }
 
-.description {
+.description,
+.section_formcomm {
     width : 80%;
     margin: 0 auto;
     text-align: justify;
@@ -82,6 +89,14 @@ a {
     text-align: center;
 }
 
+.small_title {
+    font-family: Sansita_title;
+    background: #FFC93C;
+    color: #07689F;
+    padding: 1rem 1rem;
+    text-align: center;
+}
+
 .caroussel {
     display : flex;
     flex-direction: row;
@@ -96,11 +111,85 @@ a {
     margin-left : 2%;
 }
 
+.section_formcomm {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_commentaire {
+    display : flex;
+    flex-direction: column;
+}
+
+.row_form_input input::placeholder,
+.form_commentaire textarea::placeholder {
+    font-family: "Sansita_links";
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.form_commentaire .row_form_input {
+    display : flex;
+}
+
+.form_commentaire .row_form_input input {
+    flex-grow: 1;
+    margin-right : 1%;
+    height : 2rem;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+
+.form_commentaire .submit {
+    margin-right : 0;
+}
+
+.form_commentaire input:hover,
+.form_commentaire textarea:hover {
+    border: 2px solid #07689F;
+}
+
+.form_commentaire .row_form_input input:nth-child(2) {
+    margin-right : 0;
+    margin-left : 1%; 
+}
+
+.form_commentaire textarea {
+    height : 8rem;
+    margin-bottom : 2%;
+    resize : none;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+
+.commentary {
+    display : flex;
+    margin-top : 5%;
+}
+
+.commentary img {
+    width : 64px;
+    height : 64px;
+    border-radius : 0;
+    margin-right : 2%;
+}
+
+.commentary .text_comment h3 {
+    margin : 0;
+    display : inline-block;
+}
+
+.text_comment {
+    width : 90%;
+}
+
+
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 1200px) {
 
-    .description {
+    .description,
+    .section_formcomm {
         width : 60%;
     }
 
@@ -110,7 +199,8 @@ a {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 
-    .description {
+    .description,
+    .section_formcomm {
         width: 70%;
     }
 }
