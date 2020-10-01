@@ -6,7 +6,7 @@
     <meta name="author" content="">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="myArticle.css">
+    <link rel="stylesheet" href="../src/myArticle.css">
 </head>
 
 <body>
@@ -16,10 +16,10 @@
 
         <div class="nav_large_screen">
             <ul>
-                <li><a href="#">Accueil</a></li>
+                <li><a href="../src/accueil.html">Accueil</a></li>
                 <li><a href="../src/articles.html">Articles</a></li>
                 <li><a href="#">Auteur</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="../src/contact.html">Contact</a></li>
                 <li><a href="#">A Propos</a></li>
             </ul>
         </div>
@@ -32,18 +32,20 @@
 
         <div class="nav_small_screen">
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Articles</a></li>
+                <li><a href="../src/accueil.html">Accueil</a></li>
+                <li><a href="../src/articles.html">Articles</a></li>
                 <li><a href="#">Auteur</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="../src/contact.html">Contact</a></li>
                 <li><a href="#">A Propos</a></li>
             </ul>
         </div>
-
-
     </nav>
+
+    <!--Article Section-->
     <section class="body_article_only">
-        <h1>Article Title</h1>
+        <header class="title_all_articles">
+            <h1>Article Title</h1>
+        </header>
         <div class="description">
         <div class="image_article"><img src="../Image/cropped-vanuatu-port-vila-club-hippique-052141-400x250.jpg"></div>
             Un « blue hole » ? Qu’est ce que c’est ? Sur l’île de Espiritu Santo au Vanuatu, ce sont des piscines naturelles
@@ -97,25 +99,29 @@
     <footer class="footer">
         <div class="foot_large_screen">
             <ul>
-                <li><a href="#">Nos Articles</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="../src/articles.html">Nos Articles</a></li>
+                <li><a href="../src/contact.html">Contact</a></li>
                 <li><a href="#">A propos</a></li>
-                <li><a href="#"><img src="../Image/Icon_Facebook.png"></a></li>
-                <li><a href="#"><img src="../Image/Icon_Twitter.png"></a></li>
-                <li><a href="#"><img src="../Image/Icon_Instagram.png"></a></li>
-                <li><a href="#"><img src="../Image/Icon_Youtube.png"></a></li>
+                <li><a href="https://www.facebook.com"><img src="../Image/Icon_Facebook.png"></a></li>
+                <li><a href="https://www.twitter.com"><img src="../Image/Icon_Twitter.png"></a></li>
+                <li><a href="https://www.instagram.com"><img src="../Image/Icon_Instagram.png"></a></li>
+                <li><a href="https://www.youtube.com"><img src="../Image/Icon_Youtube.png"></a></li>
             </ul>
         </div>
 
         <div class="foot_small_screen">
-            <ul>
-                <li><a href="#">Nos Articles</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul class="ul_foot_small_screen">
+                <li><a href="../src/articles.html">Nos Articles</a></li>
+                <li><a href="../src/contact.html">Contact</a></li>
                 <li><a href="#">A propos</a></li>
-                <li><a href="#"><img src="../Image/Icon_Facebook.png"></a></li>
-                <li><a href="#"><img src="../Image/Icon_Twitter.png"></a></li>
-                <li><a href="#"><img src="../Image/Icon_Instagram.png"></a></li>
-                <li><a href="#"><img src="../Image/Icon_Youtube.png"></a></li>
+                <li class="foot_in_lign">
+                    <ul class="foot_in_lign">
+                        <li><a href="https://www.facebook.com"><img src="../Image/Icon_Facebook.png"></a></li>
+                        <li><a href="https://www.twitter.com"><img src="../Image/Icon_Twitter.png"></a></li>
+                        <li><a href="https://www.instagram.com"><img src="../Image/Icon_Instagram.png"></a></li>
+                        <li><a href="https://www.youtube.com"><img src="../Image/Icon_Youtube.png"></a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
 
