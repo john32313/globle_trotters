@@ -1,57 +1,133 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-        <meta name="author" content="">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./style.css">
-    </head>
+<!doctype html>
 
-    <body>
-        <!-- NAVBAR -->
-        <nav class="navbar">
-            <a href="../index.html" class="logo"><img src="./Image/logo.png"></a>
+<html lang="fr">
 
-                <input id="menu_button" class="menu_button" type="checkbox">
-                <label for="menu_button" class="nav_button_menu">
-                    <img class="menu_open" src="./Image/menu_icon_open.png" alt="openMenuBurger">
-                    <img class="menu_close" src="./Image/menu_icon_close.png" alt="closeMenuBurger">
-                </label>
+<head>
+    <meta charset="UTF-8">
+    <title>Vanuatu Experience</title>
+    <meta name="author" content="">
+    <meta name="description" content="Home of Vanuatu website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
+        integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../src/cards.css">
+    <link rel="stylesheet" href="../src/accueil.css">
+</head>
 
-            <div class="nav_small_screen"><ul>
-                <li><a href="./src/accueil.html">Accueil</a></li>
-                <li><a href="./src/articles.html">Articles</a></li>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="../index.html" class="logo"><img src="../Image/logo.png"></a>
+
+        <input id="menu_button" class="menu_button" type="checkbox">
+        <label for="menu_button" class="nav_button_menu">
+            <img class="menu_open" src="../Image/menu_icon_open.png" alt="openMenuBurger">
+            <img class="menu_close" src="../Image/menu_icon_close.png" alt="closeMenuBurger">
+        </label>
+
+        <div class="nav_small_screen">
+            <ul>
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="../src/articles.html">Articles</a></li>
                 <li><a href="#">Auteur</a></li>
-                <li><a href="./src/contact.html">Contact</a></li>
-                <li><a href="./src/apropos.html">A Propos</a></li>
+                <li><a href="../src/contact.html">Contact</a></li>
+                <li><a href="./apropos.html">A Propos</a></li>
             </ul>
-            </div>
-        </nav>
-        
+        </div>
+    </nav>
 
-		<h1>Vanuatu</h1>
-        <div style="min-height:80%"></div>
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="foot_small_screen">
-                <ul class="ul_foot_small_screen">
-                    <li><a href="./src/articles.html">Nos Articles</a></li>
-                    <li><a href="./src/contact.html">Contact</a></li>
-                    <li><a href="./src/apropos.html">A propos</a></li>
-                    <li class="li_foot_in_lign">
-                        <ul class="ul_foot_in_lign">
-                            <li><a href="https://www.facebook.com"><img src="Image/Icon_Facebook.png"></a></li>
-                            <li><a href="https://www.twitter.com"><img src="Image/Icon_Twitter.png"></a></li>
-                            <li><a href="https://www.instagram.com"><img src="Image/Icon_Instagram.png"></a></li>
-                            <li><a href="https://www.youtube.com"><img src="Image/Icon_Youtube.png"></a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </footer>
+    <!--Picture Section-->
+    <header class="header_hero">
+        <h1>Voyage au Vanuatu</h1>
 
-        <script src="main.js"></script>
-    </body>
+        <div class="icon_down">
+            <a href="#gridCards">
+                <i class="fas fa-chevron-circle-down fa-3x"></i>
+            </a>
+        </div>
+
+    </header>
+
+    <!--Card section-->
+    <section id="gridCards">
+
+        <div class=" grid__cards">
+
+            <div class="grid__item">
+                <div class="card">
+                    <img class="card__img" src="../Image/vanuatu-santo-riri-riri-blue-hole-07681-400x250.jpg"
+                        alt="Desert">
+                    <div class="card__content">
+                        <h1 class="card__header">Blue hole Riri</h1>
+                        <p class="card__text">
+                            Pirogue traditionnelle et corde à Tarzan au blue hole Riri sur l’île Espiritu Santo au
+                            Vanuatu.
+                        </p>
+                        <a class="card__btn" href="../src/myArticle.html">Explore <span>&rarr;</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid__item">
+                <div class="card">
+                    <img class="card__img" src="../Image/cropped-vanuatu-port-vila-club-hippique-052141-400x250.jpg"
+                        alt="Desert">
+                    <div class="card__content">
+                        <h1 class="card__header">À dos de cheval</h1>
+                        <p class="card__text">
+                            Nager à cru à dos de cheval sur une plage déserte sur l’île principale d’Efate au Vanuatu.
+                        </p>
+                        <a class="card__btn" href="../src/myArticle.html">Explore <span>&rarr;</span></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="grid__item">
+                <div class="card">
+                    <img class="card__img" src="../Image/lovetrotters-vanuatu-tanna-yasur-volcano-05755-400x250.jpg"
+                        alt="Desert">
+                    <div class="card__content">
+                        <h1 class="card__header">Volcan Yasur</h1>
+                        <p class="card__text">
+                            Sur l’île de Tanna situé sur la ceinture de feu du Pacifique. Attention ça chauffe à Tanna!
+                        </p>
+                        <a class="card__btn" href="../src/myArticle.html">Explore <span>&rarr;</span></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="link__articles">
+        <a class="card__btn" href="../src/articles.html">Voir tous les articles <span>&rarr;</span></a>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="foot_small_screen">
+            <ul class="ul_foot_small_screen">
+                <li><a href="./articles.html">Nos Articles</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./apropos.html">A propos</a></li>
+                <li class="li_foot_in_lign">
+                    <ul class="ul_foot_in_lign">
+                        <li><a href="https://www.facebook.com"><img src="../Image/Icon_Facebook.png"></a></li>
+                        <li><a href="https://www.twitter.com"><img src="../Image/Icon_Twitter.png"></a></li>
+                        <li><a href="https://www.instagram.com"><img src="../Image/Icon_Instagram.png"></a></li>
+                        <li><a href="https://www.youtube.com"><img src="../Image/Icon_Youtube.png"></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="../main.js"></script>
+</body>
+
 </html>
