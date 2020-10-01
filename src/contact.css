@@ -1,0 +1,153 @@
+/* CONTACT */
+
+.contactSection {
+    margin-bottom: 75px;
+}
+
+h2 {
+    margin: 0 auto;
+}
+
+.contactSection > h2{
+    font-family: "Sansita_title";
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 75px;
+    padding: 100px 0 100px 0;
+    background-color: #FFC93C;
+    text-decoration: underline;
+    color: #07689F;
+}
+
+.formFlex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contactSection label, textarea {
+    font-size: 14px;
+}
+
+.contactSection input, textarea::placeholder {
+    font-family: "Sansita_links";
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.contactSection textarea {
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+
+.contactSection label {
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+
+.contactSection input {
+    width: 500px;
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+
+#contact input:hover, textarea:hover {
+    border: 2px solid #07689F;
+}
+
+.submit {
+    font-family: "Sansita_links";
+    font-size: 1.3rem;
+    display: block;
+    margin: 20px auto 0;
+    padding: 15px;
+    text-align: center;
+    color: #07689F;
+    background-color: #FFC93C;
+    border: none;
+    border-radius: 0.4rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.submit span {
+    margin-left: 1rem;
+    transition: 0.2s;
+  }
+.submit:hover, .submit:active {
+    background-color: #ffc632;
+    color: #07689F;
+  }
+.submit:hover span, .submit:active span {
+    margin-left: 1.5rem;
+  }
+
+.contactSection iframe {
+    margin-top: 10px;
+    -webkit-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.75);
+}
+
+
+/* MEDIA QUERIES */
+
+
+@media screen and (max-width: 1200px) {
+    
+    .formFlex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formFlex > iframe {
+        margin: 40px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .nav_button_menu img{
+        width : 64px;
+        height : 64px;
+    }
+
+    .contactSection > h2 {
+        font-size: 30px;
+    }
+
+    .formFlex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .formFlex > iframe {
+        width: 300px;
+        height: 300px;
+    }
+
+    .contactSection input {
+        width: 250px;
+        margin: 10px auto;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .contactSection textarea {
+        width: 250px;
+        height: 200px;
+        padding: 10px;
+        line-height: 1.5;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+}
