@@ -19,7 +19,7 @@ html {
     width: 100%;
     height: 100%;
     margin: 0;
-    background-color: #D9D7DD;
+    background-color: #E9F1F7;
 }
 
 a {
@@ -125,7 +125,7 @@ a {
     cursor: pointer;
 }
 
-.nav_large_screen li:hover a {
+.nav_large_screen li:hover a, .nav_small_screen li:hover a {
     text-decoration: underline;
     color: #FFC93C;
 }
@@ -135,17 +135,19 @@ a {
 .body_article_only {
     text-align: center;
     overflow: auto;
-    padding-top : 2%;
     font-family: Roboto;
 }
 
 .body_article_only h1 {
     font-family : Sansita_title;
+    color: #07689F;
 }
 
 .body_article_only img {
     width : 100%;
     height : 100%;
+    border : 3px solid #FFC93C;
+    border-radius : 55px;
 }
 
 .description {
@@ -160,6 +162,20 @@ a {
     height : 40%;
     margin-bottom : 2%;
     margin-top : 2%;
+}
+
+.image_article:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
+    border-radius : 55px;
+}
+
+.title_all_articles {
+    font-family: Sansita_title;
+    background: #FFC93C;
+    color: #07689F;
+    padding: 4rem 1rem;
+    text-align: center;
 }
 
 /* MEDIA QUERIES */
@@ -214,9 +230,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 10%;
-    position: absolute;
-    bottom: 0;
     width: 100%;
 }
 
@@ -226,10 +239,11 @@ a {
     overflow: hidden;
 }
 
-.foot_large_screen li {
-    padding: 2rem 2rem 2rem 2rem;
+.foot_in_lign ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
 }
-
 
 .foot_large_screen {
     display: none;
@@ -238,14 +252,10 @@ a {
 .foot_small_screen {
     display: block;
     background: #07689F;
-    position: absolute;
-    right: 0;
-    top: 15%;
     width: 100%;
-
 }
 
-.foot_small_screen ul {
+.foot_small_screen>ul {
     flex-direction: column;
     padding: 0;
     margin: 0;
@@ -255,14 +265,19 @@ a {
     border: 2px solid grey;
     width: 100%;
     text-align: center;
-    padding: 1%;
+    padding: 5px;
 }
 
 .footer li:hover {
     cursor: pointer;
 }
 
-.foot_large_screen li:hover a {
+.foot_small_screen li:hover a {
     text-decoration: underline;
     color: #FFC93C;
+}
+
+.foot_small_screen a img {
+    width: 45px;
+    height: 45px;
 }

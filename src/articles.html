@@ -8,13 +8,45 @@
     <meta name="description" content="all articles on the Vanuatu">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./cards.css">
-    <link rel="stylesheet" href="./articles.css">
+    <link rel="stylesheet" href="../src/cards.css">
+    <link rel="stylesheet" href="../src/articles.css">
 </head>
 
 <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="#" class="logo"><img src="../Image/logo.png" width></a>
+
+        <div class="nav_large_screen">
+            <ul>
+                <li><a href="../src/accueil.html">Accueil</a></li>
+                <li><a href="../src/articles.html">Articles</a></li>
+                <li><a href="#">Auteur</a></li>
+                <li><a href="../src/contact.html">Contact</a></li>
+                <li><a href="#">A Propos</a></li>
+            </ul>
+        </div>
+
+        <input id="menu_button" class="menu_button" type="checkbox">
+        <label for="menu_button" class="nav_button_menu">
+            <img class="menu_open" src="../Image/menu_icon_open.png" alt="openMenuBurger">
+            <img class="menu_close" src="../Image/menu_icon_close.png" alt="closeMenuBurger">
+        </label>
+
+        <div class="nav_small_screen">
+            <ul>
+                <li><a href="../src/accueil.html">Accueil</a></li>
+                <li><a href="../src/articles.html">Articles</a></li>
+                <li><a href="#">Auteur</a></li>
+                <li><a href="../src/contact.html">Contact</a></li>
+                <li><a href="#">A Propos</a></li>
+            </ul>
+        </div>
 
 
+    </nav>
+
+    <!--Cards Section-->
     <main>
         <header class="title_all_articles">
             <h1>Tous nos articles au Vanuatu</h1>
@@ -31,7 +63,7 @@
                         <p class="card__text">
                             Pirogue traditionnelle et corde à Tarzan au blue hole Riri sur l’île Espiritu Santo au Vanuatu.
                         </p>
-                        <a class="card__btn" href="#">Explore <span>&rarr;</span></a>
+                        <a class="card__btn" href="../src/myArticle.html">Explore <span>&rarr;</span></a>
                     </div>
                 </div>
             </div>
@@ -45,7 +77,7 @@
                         <p class="card__text">
                             Nager à cru à dos de cheval sur une plage déserte sur l’île principale d’Efate au Vanuatu.
                         </p>
-                        <a class="card__btn" href="#">Explore <span>&rarr;</span></a>
+                        <a class="card__btn" href="../src/myArticle.html">Explore <span>&rarr;</span></a>
                     </div>
                 </div>
             </div>
@@ -60,7 +92,7 @@
                         <p class="card__text">
                             Sur l’île de Tanna situé sur la ceinture de feu du Pacifique. Attention ça chauffe à Tanna!
                         </p>
-                        <a class="card__btn" href="#">Explore <span>&rarr;</span></a>
+                        <a class="card__btn" href="../src/myArticle.html">Explore <span>&rarr;</span></a>
                     </div>
                 </div>
             </div>
@@ -74,7 +106,7 @@
                         <p class="card__text">
                             Plonger dans l’épave du SS Coolidge avec la Lady et le Président au Vanuatu.
                         </p>
-                        <a class="card__btn" href="#">Explore <span>&rarr;</span></a>
+                        <a class="card__btn" href="../src/myArticle.html">Explore <span>&rarr;</span></a>
                     </div>
                 </div>
             </div>
@@ -87,7 +119,7 @@
                         <h1 class="card__header">Tribu Yakel</h1>
                         <p class="card__text">
                             Tribu Yakel au Vanuatu : À la rencontre du peuple d’Avatar, une des dernières tribus au monde.                        </p>
-                        <a class="card__btn" href="#">Explore <span>&rarr;</span></a>
+                        <a class="card__btn" href="../src/myArticle.html">Explore <span>&rarr;</span></a>
                     </div>
                 </div>
             </div>
@@ -102,7 +134,7 @@
                         <p class="card__text">
                             L’île de Pelé au Vanuatu: un secret bien gardé à quelques kilomètres aux larges de l’île d’Efate.
                         </p>
-                        <a class="card__btn" href="#">Explore <span>&rarr;</span></a>
+                        <a class="card__btn" href="../src/myArticle.html">Explore <span>&rarr;</span></a>
                     </div>
                 </div>
             </div>
@@ -110,7 +142,37 @@
 
         </section>
     </main>
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="foot_large_screen">
+            <ul>
+                <li><a href="../src/articles.html">Nos Articles</a></li>
+                <li><a href="../src/contact.html">Contact</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="https://www.facebook.com"><img src="../Image/Icon_Facebook.png"></a></li>
+                <li><a href="https://www.twitter.com"><img src="../Image/Icon_Twitter.png"></a></li>
+                <li><a href="https://www.instagram.com"><img src="../Image/Icon_Instagram.png"></a></li>
+                <li><a href="https://www.youtube.com"><img src="../Image/Icon_Youtube.png"></a></li>
+            </ul>
+        </div>
 
+        <div class="foot_small_screen">
+            <ul class="ul_foot_small_screen">
+                <li><a href="../src/articles.html">Nos Articles</a></li>
+                <li><a href="../src/contact.html">Contact</a></li>
+                <li><a href="#">A propos</a></li>
+                <li class="foot_in_lign">
+                    <ul class="foot_in_lign">
+                        <li><a href="https://www.facebook.com"><img src="../Image/Icon_Facebook.png"></a></li>
+                        <li><a href="https://www.twitter.com"><img src="../Image/Icon_Twitter.png"></a></li>
+                        <li><a href="https://www.instagram.com"><img src="../Image/Icon_Instagram.png"></a></li>
+                        <li><a href="https://www.youtube.com"><img src="../Image/Icon_Youtube.png"></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
     <!-- <script src="main.js"></script> -->
 </body>
 

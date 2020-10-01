@@ -1,12 +1,12 @@
 /* GENERAL */
 @font-face {
     font-family: "Sansita_links";
-    src: url('./fonts/SansitaSwashed_Link.ttf');
+    src: url('../fonts/SansitaSwashed_Link.ttf');
 }
 
 @font-face {
     font-family: "Sansita_title";
-    src: url('./fonts/SansitaSwashed_title.ttf');
+    src: url('../fonts/SansitaSwashed_title.ttf');
 }
 
 body, html{
@@ -118,9 +118,11 @@ a {
     cursor: pointer;
 }
 
-.nav_large_screen li:hover a {
+.nav_large_screen li:hover a,
+.nav_small_screen li:hover a {
     text-decoration: underline;
     color : #FFC93C;
+
 }
 
 /* CONTACT */
