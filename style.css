@@ -18,7 +18,7 @@ body, html{
     margin : 0;
 }
 
-a {
+.navbar a, .footer a {
     text-decoration: none;
     color : inherit;
     font-family: Sansita_links;
