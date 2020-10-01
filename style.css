@@ -24,29 +24,3 @@ a {
     font-family: Sansita_links;
     font-size : 24px;
 }
-
-/* MEDIA QUERIES */
-
-@media screen and (min-width: 1200px) {
-    .nav_large_screen {
-        display : block;
-    }
-
-    .nav_button_menu,
-    .nav_small_screen,
-    .navbar input[type="checkbox"]:checked~.nav_small_screen {
-        display: none;
-    }
-
-}
-
-@media screen and (min-width: 768px) {
-
-    .nav_button_menu img{
-        width : 64px;
-        height : 64px;
-    }
-
-}
-
-
