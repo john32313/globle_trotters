@@ -1,5 +1,5 @@
+<!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <title></title>
@@ -7,6 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../src/myArticle.css">
+
 </head>
 
 <body>
@@ -44,7 +45,7 @@
     <!--Article Section-->
     <section class="body_article_only">
         <header class="title_all_articles">
-            <h1>Article Title</h1>
+            <h1>Pirogue et corde à Tarzan au Blue Holo Riri sur l'île Espiritu Santa au Vanuatu</h1>
         </header>
         <div class="description">
         <div class="image_article"><img src="../Image/cropped-vanuatu-port-vila-club-hippique-052141-400x250.jpg"></div>
@@ -97,29 +98,31 @@
 
         </div>
 
+        <h2>Partagez nous votre avis ! </h2>
+        <form id="contact">
+            <input id="user" name="username" type="text" placeholder="Nom:" required />
+            <br />
+            <input id="email" type="text" name="email" placeholder="Mail:" required />
+            <br />
+            <input id="sujet" type="text" name="sujet" placeholder="Sujet:" required />
+            <br />
+            <textarea id="message" name="message" placeholder="Votre Message:" rows="5" cols="50" required></textarea>
+            <br />
+            <button type="submit" name="envoyer" value="envoyer" class="submit">Envoyer</button>
+            <br />
+        </form>
+
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="foot_large_screen">
-            <ul>
-                <li><a href="../src/articles.html">Nos Articles</a></li>
-                <li><a href="../src/contact.html">Contact</a></li>
-                <li><a href="#">A propos</a></li>
-                <li><a href="https://www.facebook.com"><img src="../Image/Icon_Facebook.png"></a></li>
-                <li><a href="https://www.twitter.com"><img src="../Image/Icon_Twitter.png"></a></li>
-                <li><a href="https://www.instagram.com"><img src="../Image/Icon_Instagram.png"></a></li>
-                <li><a href="https://www.youtube.com"><img src="../Image/Icon_Youtube.png"></a></li>
-            </ul>
-        </div>
-
         <div class="foot_small_screen">
             <ul class="ul_foot_small_screen">
-                <li><a href="../src/articles.html">Nos Articles</a></li>
-                <li><a href="../src/contact.html">Contact</a></li>
+                <li><a href="./src/articles.html">Nos Articles</a></li>
+                <li><a href="./src/contact.html">Contact</a></li>
                 <li><a href="#">A propos</a></li>
-                <li class="foot_in_lign">
-                    <ul class="foot_in_lign">
+                <li class="li_foot_in_lign">
+                    <ul class="ul_foot_in_lign">
                         <li><a href="https://www.facebook.com"><img src="../Image/Icon_Facebook.png"></a></li>
                         <li><a href="https://www.twitter.com"><img src="../Image/Icon_Twitter.png"></a></li>
                         <li><a href="https://www.instagram.com"><img src="../Image/Icon_Instagram.png"></a></li>
@@ -128,7 +131,6 @@
                 </li>
             </ul>
         </div>
-
     </footer>
 
     <script src="../main.js"></script>

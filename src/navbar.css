@@ -6,11 +6,12 @@
   justify-content: space-between;
   height: 7em;
   min-height: 50px;
+  color : white;
 }
 
 .logo img {
   width: 75%;
-  height: 80%;
+  height: 4em;
 }
 
 .logo {
@@ -82,19 +83,23 @@
   margin: 0;
 }
 
+.nav_small_screen ul:first-child {
+  border-top :1px solid #055887;
+}
+
 .nav_small_screen ul li {
-  border: 2px solid grey;
+  border-bottom :1px solid #055887;
   width: 100%;
   text-align: center;
   padding: 2%;
 }
 
-.navbar li:hover {
+.navbar li a:hover {
   cursor: pointer;
 }
 
-.nav_large_screen li:hover a,
-.nav_small_screen li:hover a {
+.nav_large_screen li a:hover,
+.nav_small_screen li a:hover {
   text-decoration: underline;
   color: #FFC93C;
 
