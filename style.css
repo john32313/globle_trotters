@@ -4,12 +4,12 @@
 /* GENERAL */
 @font-face {
     font-family: "Sansita_links";
-    src: url('../fonts/SansitaSwashed_Link.ttf');
+    src: url('./fonts/SansitaSwashed_Link.ttf');
 }
 
 @font-face {
     font-family: "Sansita_title";
-    src: url('../fonts/SansitaSwashed_title.ttf');
+    src: url('./fonts/SansitaSwashed_title.ttf');
 }
 
 body, html{
@@ -110,9 +110,6 @@ a {
         display: none;
     }
 
-    .foot_large_screen {
-        display: block;
-    }
 }
 
 @media screen and (min-width: 768px) {
