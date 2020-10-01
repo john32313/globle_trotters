@@ -106,3 +106,9 @@ a {
     grid-gap: 20px;
     font-size: 1.2em;
 }
+
+.card_description {
+    font-size: 18px;
+    font-weight: normal;
+    text-align: justify;
+}
