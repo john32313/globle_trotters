@@ -1,0 +1,85 @@
+@import '../style.css';
+@import '../src/footer.css';
+
+@keyframes fullwidth-header-bounce {
+    0% {transform: translateY(0%);}
+    12.5% {transform: translateY(30%);}
+    25% {transform: translateY(0%);}
+    37.5% {transform: translateY(30%);}
+    50% {transform: translateY(0%);}
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    /* width: 100%; */
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.header_hero {
+    min-height: 800px;
+    background-image: url('../Image/lovetrotters-vanuatu-tanna-yasur-volcano-05755.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header_hero h1 {
+    color: #FFC93C;
+    margin: 0;
+    font-family: Sansita_title;
+    font-size: 8vw;
+    margin: auto;
+
+}
+
+@media (max-width: 768px) {
+    .header_hero {
+        min-height: 700px;
+    }
+}
+
+.icon_down {
+    margin: 9em auto;
+}
+
+.icon_down a {
+    color: #FFC93C;
+}
+
+.icon_down a i {
+    animation: fullwidth-header-bounce 2.2s ease-out infinite;
+}
+
+.link__articles {
+    background: #FFC93C;
+    padding: 4rem 1rem;
+}
+
+.link__articles .card__btn {
+    background: #07689F;
+    color: #FFC93C;
+    max-width: 400px;
+    margin: auto
+}
