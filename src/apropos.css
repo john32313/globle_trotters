@@ -31,6 +31,7 @@ a {
 /* surcharge quelques class de cards.css */
 .grid__item {
     max-width: 300px;
+    cursor: default;
 }
 
 .card__content {
