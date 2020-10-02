@@ -11,11 +11,10 @@ h2 {
 .contactSection > h2{
     font-family: "Sansita_title";
     text-align: center;
-    font-size: 50px;
+    font-size: 2em;
     margin-bottom: 75px;
     padding: 100px 0 100px 0;
     background-color: #FFC93C;
-    text-decoration: underline;
     color: #07689F;
 }
 
