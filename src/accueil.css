@@ -44,6 +44,10 @@ a {
     align-items: center;
 }
 
+.header_hero .icon_down {
+    position: absolute;
+    bottom : 8vh;
+}
 
 .header_hero h1 {
     color: #FFC93C;
@@ -51,6 +55,8 @@ a {
     font-family: Sansita_title;
     font-size: 8vw;
     margin: auto;
+    position: absolute;
+    top : 40vh;
 
 }
 
@@ -61,7 +67,7 @@ a {
 }
 
 .icon_down {
-    margin: 9em auto;
+    margin: 0 auto;
 }
 
 .icon_down a {
