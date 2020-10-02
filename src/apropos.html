@@ -13,12 +13,31 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
         integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="./cards.css">
     <link rel="stylesheet" href="./apropos.css">
 </head>
 
 <body>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <a href="../index.html" class="logo"><img src="../Image/logo.png"></a>
 
+    <input id="menu_button" class="menu_button" type="checkbox">
+    <label for="menu_button" class="nav_button_menu">
+        <img class="menu_open" src="../Image/menu_icon_open.png" alt="openMenuBurger">
+        <img class="menu_close" src="../Image/menu_icon_close.png" alt="closeMenuBurger">
+    </label>
+
+    <div class="nav_small_screen">
+        <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="./articles.html">Articles</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./apropos.html">A Propos</a></li>
+        </ul>
+    </div>
+</nav>
 
     <main>
         <header class="title_main">
@@ -39,6 +58,11 @@
                                 <li><a href="https://www.linkedin.com/in/cedric-priouret-40889718b/"><i class="fab fa-linkedin"></i></a></li>
                                 <li><a href="https://twitter.com/Franalol"><i class="fab fa-twitter"></i></a></li>
                             </ul>
+                            <p class="card__text">
+                                Originaire de Port-Vila, capitale de Vanuatu, ce musicien a décidé de changer d'orientation à la découverte d'un invention tech
+                                qui changea sa vie: le casque audio. Il n'aura ainsi plus à faire subir ses accords maladroits à son public, et pourra 
+                                après chaque jour de formation écouter des artistes du monde entier.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -53,6 +77,11 @@
                                 <li><a href="https://www.linkedin.com/in/vivien-michelesi-b12065b1/"><i class="fab fa-linkedin"></i></a></li>
                                 <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
                             </ul>
+                            <p class="card__text">
+                                Originaire d'Anatom au Sud de Vanuatu, ce chaman a décidé d'intégrer la Wild Code School quand il a appris 
+                                l'existence d'une boîte à image nommée "écran". En effet, il n'est dès lors plus nécessaire d'entrer en transe pour voir
+                                le monde différement, Photoshop s'en chargera.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -67,6 +96,11 @@
                                 <li><a href="https://www.linkedin.com/in/jonathan-fran%C3%A7ois-9510671aa/"><i class="fab fa-linkedin"></i></a></li>
                                 <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
                             </ul>
+                            <p class="card__text">
+                                Originaire des Iles Torres au nord de Vanuatu, ce fier guerrier a décidé de devenir développeur Web
+                                quand il a appris qu'une souris n'était pas qu'un nuisible à chasser. Cet outil lui permettra de devenir
+                                un soldat sur la toile sous le pseudonyme de "Vanuatu4Ever".
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -81,6 +115,11 @@
                                 <li><a href="https://www.linkedin.com/in/lenagiacalone/"><i class="fab fa-linkedin"></i></a></li>
                                 <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
                             </ul>
+                            <p class="card__text">
+                                Originaire de Malekula à l'ouest de Vanuatu, cette bucheronne apprend l'existence de git et sa vie change. 
+                                Elle découvre que les branches ne poussent pas que sur les arbres, et que celles-ci provoquent des noeuds au cerveau.
+                                C'est décidé, elle deviendra experte git.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -90,7 +129,24 @@
         </section>
 
     </main>
-
+    <!--Footer-->
+    <footer class="footer">
+        <div class="foot_small_screen">
+            <ul class="ul_foot_small_screen">
+                <li><a href="./articles.html">Nos Articles</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./apropos.html">A propos</a></li>
+                <li class="li_foot_in_lign">
+                    <ul class="ul_foot_in_lign">
+                        <li><a href="https://www.facebook.com"><img src="../Image/Icon_Facebook.png"></a></li>
+                        <li><a href="https://www.twitter.com"><img src="../Image/Icon_Twitter.png"></a></li>
+                        <li><a href="https://www.instagram.com"><img src="../Image/Icon_Instagram.png"></a></li>
+                        <li><a href="https://www.youtube.com"><img src="../Image/Icon_Youtube.png"></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
 
     <!-- <script src="main.js"></script> -->
 </body>

@@ -4,19 +4,28 @@
     margin-bottom: 75px;
 }
 
-h2 {
-    margin: 0 auto;
-}
 
-.contactSection > h2{
+.contactSection > h1{
     font-family: "Sansita_title";
     text-align: center;
-    font-size: 50px;
+    font-size: 2em;
     margin-bottom: 75px;
-    padding: 100px 0 100px 0;
+    padding: 4rem 1rem;
     background-color: #FFC93C;
-    text-decoration: underline;
     color: #07689F;
+}
+
+.contactSection .title_main {
+    font-family: Sansita_title;
+    background: #FFC93C;
+    color: #07689F;
+    padding: 4rem 1rem;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.contactSection .title_main h1 {
+    font-size : 2em;
 }
 
 .formFlex{

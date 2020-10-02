@@ -1,28 +1,22 @@
+<!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <title></title>
     <meta name="author" content="">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../src/myArticle.css">
+    <link rel="stylesheet" href="./myArticle.css">
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="./cards.css">
+    <link rel="stylesheet" href="./accueil.css">
+
 </head>
 
 <body>
     <!-- NAVBAR -->
     <nav class="navbar">
-        <a href="#" class="logo"><img src="../Image/logo.png" width></a>
-
-        <div class="nav_large_screen">
-            <ul>
-                <li><a href="../src/accueil.html">Accueil</a></li>
-                <li><a href="../src/articles.html">Articles</a></li>
-                <li><a href="#">Auteur</a></li>
-                <li><a href="../src/contact.html">Contact</a></li>
-                <li><a href="#">A Propos</a></li>
-            </ul>
-        </div>
+        <a href="../index.html" class="logo"><img src="../Image/logo.png" width></a>
 
         <input id="menu_button" class="menu_button" type="checkbox">
         <label for="menu_button" class="nav_button_menu">
@@ -32,10 +26,9 @@
 
         <div class="nav_small_screen">
             <ul>
-                <li><a href="../src/accueil.html">Accueil</a></li>
-                <li><a href="../src/articles.html">Articles</a></li>
-                <li><a href="#">Auteur</a></li>
-                <li><a href="../src/contact.html">Contact</a></li>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="./articles.html">Articles</a></li>
+                <li><a href="./contact.html">Contact</a></li>
                 <li><a href="#">A Propos</a></li>
             </ul>
         </div>
@@ -44,7 +37,7 @@
     <!--Article Section-->
     <section class="body_article_only">
         <header class="title_all_articles">
-            <h1>Article Title</h1>
+            <h1>Pirogue et corde à Tarzan au Blue Holo Riri sur l'île Espiritu Santa au Vanuatu</h1>
         </header>
         <div class="description">
         <div class="image_article"><img src="../Image/cropped-vanuatu-port-vila-club-hippique-052141-400x250.jpg"></div>
@@ -64,8 +57,12 @@
             seulement brièvement interrompu par notre rameur qui doit évacuer l’eau qui s’infiltre dans le canoë avec un
             seau improvisé pour nous éviter de couler. En effet, les canoës traditionnels sont taillés dans un tronc
             d’arbre poreux qui flotte très bien, mais qui n’est pas étanche. C’est marrant !
-
-            <h2>IMAGE Ou Carousel ?</h2>
+            <div class="caroussel">
+                <div class="image_article"><img src="../Image/caroussel/vanuatu-santo-riri-riri-blue-hole-07689.jpg">
+                </div>
+                <div class="image_article"><img src="../Image/caroussel/vanuatu-santo-riri-riri-blue-hole-07737.jpg">
+                </div>
+            </div>
 
             À l’approche du trou bleu, les couleurs vertes émeraudes du cours d’eau virent graduellement vers le bleu.
             La rivière se termine en cul de sac dans un gros plan d’eau d’une propreté et d’une clarté tellement
@@ -92,30 +89,91 @@
             Bon vent !
 
         </div>
+        <header class="small_title">
+            <h2>Partagez nous votre avis !</h2>
+        </header>
+        <section class="section_formcomm">
+            <form class="form_commentaire">
+                <textarea placeHolder="COMMENTAIRE"></textarea>
+            <div class="row_form_input">
+                <input type="text" placeholder="Nom : ">
+                <input type="mail" placeholder="Adresse mail : ">
+            </div>
+                <button type="button" name="envoyer" value="envoyer" class="submit">Envoyer <span>&rarr;</span></button>
+            </form>
+
+            <div class="commentary">
+                <img alt="logocomment" src="../Image/logoCommentaire.png">
+                <div class="text_comment">
+                    <h3>FAVRE</h3> <em>le 12 septembre 2018 à 10h10</em>
+                    <p>Bonjour,<br/>
+                        Merci pour tous ces très beaux récits !<br/>
+                        Une petite question : comment avez-vous organisé vos transferts d’île en île au Vanuatu ?
+                        Est-ce que Air Vanuatu propose un pass ?<br/>
+                        Merci par avance pour vos précieux conseils !<br/>
+                        Véronique</p>
+                    <button type="button" name="envoyer" value="envoyer" class="submit">Répondre
+                        <span>&rarr;</span></button>
+                </div>
+            </div>
+            <div class="commentary">
+                <img alt="logocomment" src="../Image/logoCommentaire.png">
+                <div class="text_comment">
+                    <h3>Santo Sups</h3> <em>sur 04 février 2015 à 8h39</em>
+                    <p>As always…incredible images!</p>
+                    <button type="button" name="envoyer" value="envoyer" class="submit">Répondre
+                        <span>&rarr;</span></button>
+                </div>
+            </div>
+            <div class="commentary">
+                <img alt="logocomment" src="../Image/logoCommentaire.png">
+                <div class="text_comment">
+                    <h3>Zouzou Ben</h3> <em>sur 03 février 2015 à 23h14</em>
+                    <p>J'adoooore !!! Tres belles photos , paysages incroyables comme d'habitude. D'apres votre exaltant
+                        recit vous avez l'air d'avoir bcps apprécié le VANUATU , n'est pas??? En tout cas votre joie de
+                        vivre est un réel plaisir .. bon vent</p>
+                    <button type="button" name="envoyer" value="envoyer" class="submit">Répondre
+                        <span>&rarr;</span></button>
+                </div>
+            </div>
+            <div class="commentary">
+                <img alt="logocomment" src="../Image/logoCommentaire.png">
+                <div class="text_comment">
+                    <h3>Françoise Dorval</h3> <em> sur 03 février 2015 à 22h53</em>
+                    <p>Super! Et je vous aime tous les deux votre jeunesse intelligente,votre débrouillardise et toutes
+                        ces belles photos bien documentées pour notre plus grand bonheur merci! De tout cœur</p>
+                    <button type="button" name="envoyer" value="envoyer" class="submit">Répondre
+                        <span>&rarr;</span></button>
+                </div>
+            </div>
+            <div class="commentary">
+                <img alt="logocomment" src="../Image/logoCommentaire.png">
+                <div class="text_comment">
+                    <h3>Mohamed Amine M'HAMDI</h3> <em>sur 08 juin 2018 à 20h27</em>
+                    <p>It looks terrific, make me wanna visit one day. Keep up exploring because we are curious species.
+                    </p>
+                    <button type="button" name="envoyer" value="envoyer" class="submit">Répondre
+                        <span>&rarr;</span></button>
+                </div>
+            </div>
+
+            
+        </section>
 
     </section>
 
+    <div class="link__articles">
+        <a class="card__btn" href="./articles.html">Voir tous les articles <span>&rarr;</span></a>
+    </div>
     <!-- Footer -->
     <footer class="footer">
-        <div class="foot_large_screen">
-            <ul>
-                <li><a href="../src/articles.html">Nos Articles</a></li>
-                <li><a href="../src/contact.html">Contact</a></li>
-                <li><a href="#">A propos</a></li>
-                <li><a href="https://www.facebook.com"><img src="../Image/Icon_Facebook.png"></a></li>
-                <li><a href="https://www.twitter.com"><img src="../Image/Icon_Twitter.png"></a></li>
-                <li><a href="https://www.instagram.com"><img src="../Image/Icon_Instagram.png"></a></li>
-                <li><a href="https://www.youtube.com"><img src="../Image/Icon_Youtube.png"></a></li>
-            </ul>
-        </div>
-
         <div class="foot_small_screen">
             <ul class="ul_foot_small_screen">
-                <li><a href="../src/articles.html">Nos Articles</a></li>
-                <li><a href="../src/contact.html">Contact</a></li>
-                <li><a href="#">A propos</a></li>
-                <li class="foot_in_lign">
-                    <ul class="foot_in_lign">
+                <li><a href="./articles.html">Nos Articles</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./apropos.html">A propos</a></li>
+                <li class="li_foot_in_lign">
+                    <ul class="ul_foot_in_lign">
                         <li><a href="https://www.facebook.com"><img src="../Image/Icon_Facebook.png"></a></li>
                         <li><a href="https://www.twitter.com"><img src="../Image/Icon_Twitter.png"></a></li>
                         <li><a href="https://www.instagram.com"><img src="../Image/Icon_Instagram.png"></a></li>
@@ -124,7 +182,6 @@
                 </li>
             </ul>
         </div>
-
     </footer>
 
     <script src="../main.js"></script>
