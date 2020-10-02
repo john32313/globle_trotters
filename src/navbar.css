@@ -27,7 +27,7 @@
 
 
 .navbar input[type="checkbox"],
-.navbar input[type="checkbox"]+label img[class^="menu_"] {
+.navbar input[type="checkbox"]+label i {
   display: none;
 }
 
@@ -47,9 +47,9 @@
   display: none;
 }
 
-.nav_button_menu img {
-  width: 48px;
-  height: 48px;
+
+.menu_open, .menu_close {
+  font-size : 3rem;
 }
 
 .nav_button_menu {
@@ -127,16 +127,4 @@
   .navbar input[type="checkbox"]:not(:checked)~.nav_small_screen {
     display: block;
   }
-  /* 
-  .nav_small_screen,
-  .navbar input[type="checkbox"]:checked~.nav_small_screen*/
-}
-
-@media screen and (min-width: 768px) {
-
-  .nav_button_menu img {
-    width: 64px;
-    height: 64px;
-  }
-
 }
