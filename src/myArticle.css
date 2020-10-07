@@ -74,12 +74,12 @@ a {
     margin-bottom : 2%;
     margin-top : 2%;
 }
-
+/*
 .image_article:hover {
     transform: translateY(-0.5%);
     box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
     border-radius : 55px;
-}
+}*/
 
 .title_all_articles {
     font-family: Sansita_title;
@@ -98,6 +98,7 @@ a {
 }
 
 .caroussel {
+    position : relative;
     display : flex;
     flex-direction: row;
     width: 100%;
@@ -107,8 +108,29 @@ a {
 
 .caroussel .image_article {
     height : 92%;
-    margin-right : 2%;
-    margin-left : 2%;
+    /*margin-right : 2%;
+    margin-left : 2%;*/
+    width : 100%;
+}
+
+.caroussel div[class^="caroussel_"] {
+    height : 48px;
+    width : 48px;
+    border : 0;
+    padding : 0;
+    background : url('../Image/caroussel/arrow-left.png') no-repeat center;
+    position : absolute;
+    top : calc(50% - 24px);
+}
+
+.caroussel div[class="caroussel_right"] {
+    background-image : url('../Image/caroussel/arrow-right.png');
+    right : 0%;
+}
+
+.caroussel div[class^="caroussel_"]:hover {
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 .section_formcomm {
