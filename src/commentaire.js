@@ -1,6 +1,4 @@
 
-var moment = require('moment');
-
 const btnFormComm = document.querySelector("#form_comm button");
 const textarea = document.getElementById("id_textarea");
 const inputName = document.getElementById("id_input_name");
