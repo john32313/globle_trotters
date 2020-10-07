@@ -183,6 +183,9 @@ a {
     width : 90%;
 }
 
+#template_commentary{
+    display: none;
+}
 
 /* MEDIA QUERIES */
 

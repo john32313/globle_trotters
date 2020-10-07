@@ -18,5 +18,8 @@
   "homepage": "https://github.com/lgiacalo/globe_trotters#readme",
   "devDependencies": {
     "parcel": "^1.12.4"
+  },
+  "dependencies": {
+    "moment": "^2.29.1"
   }
 }
