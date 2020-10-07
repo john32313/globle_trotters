@@ -46,16 +46,18 @@
 
             <div class="formFlex">
                 
-              <form id="contact">
+              <form id="contact" novalidate>
                 <input id="user" name="username" type="text" placeholder="Nom:" required />
                <br/>
-                <input id="email" type="text" name="email" placeholder="Mail:" required />
+                <input id="email" type="mail" name="email" placeholder="Mail:" required />
                <br/>
                 <input id="sujet" type="text" name="sujet" placeholder="Sujet:" required />
                <br/>
                 <textarea id="message" name="message" placeholder="Votre Message:" rows="5" cols="50" required ></textarea>
                <br/>  
-               <button type="submit" name ="envoyer" value="envoyer" class="submit" >Envoyer <span>&rarr;</span></button>
+                <span id="required-field"></span>
+               <br/> 
+               <button type="submit" name="envoyer" value="envoyer" class="submit" >Envoyer <span>&rarr;</span></button>
                <br/>
               </form>
 
@@ -87,6 +89,7 @@
             </div>
         </footer>
 
+        <script src="contact.js"></script>
         <script src="../main.js"></script>
     </body>
 </html>

@@ -56,8 +56,8 @@ a {
 .body_article_only img {
     width : 100%;
     height : 35rem;
-    border : 3px solid #FFC93C;
-    border-radius : 55px;
+    border: 2px solid #cfcfcf;
+    border-radius : 5px;
 }
 
 .description,
@@ -77,8 +77,8 @@ a {
 
 .image_article:hover {
     transform: translateY(-0.5%);
-    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
-    border-radius : 55px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 5px;
 }
 
 .title_all_articles {
