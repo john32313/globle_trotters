@@ -1,36 +1,24 @@
 
-var moment = require('moment'); // require
+var moment = require('moment');
 
-// const form_commentaire = document.getElementById("form_comm");
 const btnFormComm = document.querySelector("#form_comm button");
 const textarea = document.getElementById("id_textarea");
 const inputName = document.getElementById("id_input_name");
 const inputMail = document.getElementById("id_input_mail");
-
 const templateComm = document.getElementById("template_commentary");
-console.log('btnFormComm :>> ', btnFormComm);
-
 const all_comms = document.getElementById("all_commentaries");
-console.log('all_comms :>> ', all_comms);
 
 btnFormComm.addEventListener("click", (e) => {
     e.preventDefault();
 
-
-    if (textarea.value.trim() === "" || inputName.value.trim() === "" || inputMail.value.trim() === "")
+    if (textarea.value.trim() === "" 
+        || inputName.value.trim() === "" 
+        || inputMail.value.trim() === "")
         return;
-
 
     const newComm = createNewComm();
     all_comms.appendChild(newComm);
 })
-
-
-
-
-
-
-
 
 
 function createNewComm(){
@@ -46,7 +34,6 @@ function createNewComm(){
     newComm.id = "";
     console.log('newComm.id :>> ', newComm.id);
 
-
     const newh3 = newComm.querySelector("h3");
     console.log('newh3 :>> ', newh3);
     newh3.innerHTML = inputName.value;
@@ -58,8 +45,6 @@ function createNewComm(){
     const newp = newComm.querySelector("p");
     console.log('newp :>> ', newp);
     newp.innerHTML = textarea.value;
-    
-    
     
     textarea.value = "";
     inputName.value = "";
