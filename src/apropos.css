@@ -109,3 +109,24 @@ a {
     -webkit-text-fill-color: transparent;
     transition: all 265ms ease-in;
 }
+
+/*Changement de style pour le JS*/
+#portVilla {
+    color: #07689F;
+    text-decoration: underline;
+}
+
+#anatom {
+    color: #07689F;
+    text-decoration: underline;
+}
+
+#ilesTorres {
+    color: #07689F;
+    text-decoration: underline;
+}
+
+#malekula {
+    color: #07689F;
+    text-decoration: underline;
+}
