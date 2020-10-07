@@ -96,11 +96,9 @@ a {
     padding: 1rem 1rem;
     text-align: center;
 }
-
+/*CAROUSEL*/
 .caroussel {
     position : relative;
-    display : flex;
-    flex-direction: row;
     width: 100%;
     height: 45%;
     margin-bottom : 2%;
@@ -113,26 +111,48 @@ a {
     width : 100%;
 }
 
-.caroussel div[class^="caroussel_"] {
-    height : 48px;
-    width : 48px;
+.caroussel i{
+    font-size : 48px;
     border : 0;
     padding : 0;
-    background : url('../Image/caroussel/arrow-left.png') no-repeat center;
+    color : #FFC93C;
     position : absolute;
     top : calc(50% - 24px);
 }
 
-.caroussel div[class="caroussel_right"] {
-    background-image : url('../Image/caroussel/arrow-right.png');
+.caroussel .caroussel_right {
     right : 0%;
 }
 
-.caroussel div[class^="caroussel_"]:hover {
+.caroussel i:hover {
     transform: scale(1.2);
     cursor: pointer;
 }
 
+.pagination {
+    position: absolute;
+    bottom : 2%;
+    left : calc(50% - 45px);
+}
+.pagination .pag_off {
+    width : 12px;
+    height : 12px;
+    border-radius : 50%;
+    background-color : #FFC93C;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.pagination .pag_off:hover {
+    transform: scale(1.5);
+}
+
+.pagination .pag_on {
+    width : 16px;
+    height : 16px;
+}
+
+/*FORM+COMMENT*/
 .section_formcomm {
     display: flex;
     flex-direction: column;
