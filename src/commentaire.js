@@ -22,7 +22,7 @@ btnFormComm.addEventListener("click", (e) => {
         return;
 
     const newComm = createNewComm();
-    all_comms.appendChild(newComm);
+    all_comms.prepend(newComm);
 })
 
 
