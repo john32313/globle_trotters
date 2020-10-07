@@ -9,10 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
         integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q" crossorigin="anonymous">
-    <link rel="stylesheet" href="./myArticle.css">
     <link rel="stylesheet" href="./contact.css">
     <link rel="stylesheet" href="./cards.css">
     <link rel="stylesheet" href="./accueil.css">
+    <link rel="stylesheet" href="./myArticle.css">
 
 </head>
 
@@ -115,8 +115,8 @@
             <form class="form_commentaire" id="form_comm">
                 <textarea id="id_textarea" placeholder="Commentaire : "></textarea>
                 <div class="row_form_input">
-                    <input id="id_input_name" type="text" placeholder="Nom : " value="jonathan">
-                    <input id="id_input_mail" type="email" placeholder="Adresse mail : " value="mail1@gmail.com">
+                    <input id="id_input_name" type="text" placeholder="Nom : ">
+                    <input id="id_input_mail" type="email" placeholder="Adresse mail : " >
                 </div>
                 <button type="button" name="envoyer" value="envoyer" class="submit">Envoyer <span>&rarr;</span></button>
             </form>
@@ -125,7 +125,7 @@
             <div id="all_commentaries">
 
                 <div class="commentary" id="template_commentary">
-                    <img alt="logocomment" data-gender="">
+                    <img alt="img comm" data-gender="">
                     <div class="text_comment">
                         <h3></h3> <em></em>
                         <p></p>
@@ -135,7 +135,7 @@
                 </div>
 
                 <div class="commentary">
-                    <img alt="logocomment" data-gender="female" src="https://randomuser.me/api/portraits/med/women/82.jpg">
+                    <img alt="img comm" data-gender="female" src="https://randomuser.me/api/portraits/med/women/82.jpg">
                     <div class="text_comment">
                         <h3>Françoise Dorval</h3> <em> - le 02 Oct 2020 à 22:53</em>
                         <p>Super! Et je vous aime tous les deux votre jeunesse intelligente,votre débrouillardise et
@@ -165,12 +165,10 @@
                 <li><a href="./apropos.html">A propos</a></li>
                 <li class="li_foot_in_lign">
                     <ul class="ul_foot_in_lign">
-                        <li><a href="https://www.facebook.com"><img src="../Image/Icon_Facebook.png" alt="fb"></a></li>
-                        <li><a href="https://www.twitter.com"><img src="../Image/Icon_Twitter.png" alt="twitter"></a>
-                        </li>
-                        <li><a href="https://www.instagram.com"><img src="../Image/Icon_Instagram.png" alt="insta"></a>
-                        </li>
-                        <li><a href="https://www.youtube.com"><img src="../Image/Icon_Youtube.png" alt="ytbe"></a></li>
+                        <li><a href="https://www.facebook.com"><img src="../Image/Icon_Facebook.png" alt="fb" id="facebook" class="icone"></a></li>
+                        <li><a href="https://www.twitter.com"><img src="../Image/Icon_Twitter.png" alt="twitter" id="twitter" class="icone"></a></li>
+                        <li><a href="https://www.instagram.com"><img src="../Image/Icon_Instagram.png" alt="insta" id="instagram" class="icone"></a></li>
+                        <li><a href="https://www.youtube.com"><img src="../Image/Icon_Youtube.png" alt="ytbe" id="youtube" class="icone"></a></li>
                     </ul>
                 </li>
             </ul>
