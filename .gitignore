@@ -3,3 +3,4 @@ node_modules
 .cache
 dist
 Image/logo.svg
+src/commentaire.dev.js
