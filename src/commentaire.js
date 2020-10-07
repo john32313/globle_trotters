@@ -22,28 +22,17 @@ btnFormComm.addEventListener("click", (e) => {
 
 
 function createNewComm(){
-
-    console.log(textarea.value);
-    console.log(inputName.value);
-    console.log(inputMail.value);
-
     const newComm = templateComm.cloneNode(true);
-    console.log(newComm);
     
-    console.log('newComm.id :>> ', newComm.id);
     newComm.id = "";
-    console.log('newComm.id :>> ', newComm.id);
 
     const newh3 = newComm.querySelector("h3");
-    console.log('newh3 :>> ', newh3);
     newh3.innerHTML = inputName.value;
     
     const newDate = newComm.querySelector("em");
     newDate.innerHTML = ` - le ${moment().format('DD MMM YYYY à hh:mm')}`;
-    console.log('newDate :>> ', newDate);
     
     const newp = newComm.querySelector("p");
-    console.log('newp :>> ', newp);
     newp.innerHTML = textarea.value;
     
     textarea.value = "";
