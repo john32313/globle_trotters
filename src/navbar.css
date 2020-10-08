@@ -98,6 +98,20 @@
 
 }
 
+.arrow_scroll{
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  bottom: 50px;
+  right: 30px;
+}
+
+.arrow_scroll a {
+  color: #055887;
+  font-size: 15px;
+}
+
+
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 1200px) {
@@ -127,5 +141,9 @@
   }
   .navbar input[type="checkbox"]:not(:checked)~.nav_small_screen {
     display: block;
+  }
+
+  .arrow_scroll {
+    bottom: 100px;
   }
 }
