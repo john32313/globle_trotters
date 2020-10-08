@@ -60,9 +60,14 @@ a {
     border-radius : 5px;
 }
 
+.descriptionText {
+    margin : 0 auto;
+    width : 80%;
+}
+
 .description,
 .section_formcomm {
-    width : 80%;
+    width : 100%;
     margin: 0 auto;
     text-align: justify;
     padding-top : 2%;
@@ -241,12 +246,20 @@ a {
     .section_formcomm {
         width : 60%;
     }
+    .descriptionText {
+        width: 100%;
+    }
+    
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-    .description,
+    .description
+     {
+        width: 100%;
+    }
+    .descriptionText,
     .section_formcomm {
-        width: 70%;
+        width : 80%;
     }
 }
 
