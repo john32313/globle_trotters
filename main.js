@@ -20,6 +20,14 @@ window.addEventListener('mouseup', e => {
     }
 
 });
+window.addEventListener("touchend", (e) => {
+  let navi = document.querySelector(".navbar");
+  let nav = e.composedPath();
+  if (!nav.includes(navi)) {
+    let check = document.querySelector("#menu_button");
+    check.checked = false;
+  }
+});
 
 const arrowScroll = $("#arrow_scroll");
 arrowScroll.fadeOut(1);
