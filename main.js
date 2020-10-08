@@ -10,6 +10,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+//navbar mouseOut
+window.addEventListener('mouseup', e => {
+    let navi = document.querySelector('.navbar')
+    let nav = e.composedPath();
+    if (!nav.includes(navi)) {
+        let check = document.querySelector('#menu_button');
+        check.checked = false;
+    }
+
+});
+
 const arrowScroll = $("#arrow_scroll");
 arrowScroll.fadeOut(1);
 let isScrolling;
@@ -27,4 +38,5 @@ window.addEventListener('scroll', function ( event ) {
         }
 	}, 40);
 }, false);
+
 
