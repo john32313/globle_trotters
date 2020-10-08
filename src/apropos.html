@@ -21,25 +21,32 @@
 </head>
 
 <body>
-<!-- NAVBAR -->
-<nav class="navbar">
-    <a href="../index.html" class="logo"><img src="../Image/logo.png" alt="logo"></a>
+    <!-- NAVBAR -->
+    <nav id="navBar" class="navbar">
+        <a href="../index.html" class="logo"><img src="../Image/logo.png" alt="logo"></a>
 
-    <input id="menu_button" class="menu_button" type="checkbox">
-    <label for="menu_button" class="nav_button_menu">
-        <i class="fas fa-bars menu_open"></i>
-        <i class="fas fa-times menu_close"></i>
-    </label>
+        <input id="menu_button" class="menu_button" type="checkbox">
+        <label for="menu_button" class="nav_button_menu">
+            <i class="fas fa-bars menu_open"></i>
+            <i class="fas fa-times menu_close"></i>
+        </label>
 
-    <div class="nav_small_screen">
-        <ul>
-            <li><a href="../index.html">Accueil</a></li>
-            <li><a href="./articles.html">Articles</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="./apropos.html">A Propos</a></li>
-        </ul>
+        <div class="nav_small_screen">
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="./articles.html">Articles</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./apropos.html">A Propos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Arrow scroll -->
+    <div id="arrow_scroll" class="arrow_scroll">
+        <a href="#navBar">
+            <i class="fas fa-angle-double-up fa-3x"></i>
+        </a>
     </div>
-</nav>
 
     <main>
         <header class="title_main">
@@ -52,17 +59,21 @@
 
                 <div class="grid__item">
                     <div class="card">
-                        <img class="card__img" src="../Image/CedricPriouret.png" alt="photo Cedric Priouret" id='imageCedric'>
+                        <img class="card__img" src="../Image/CedricPriouret.png" alt="photo Cedric Priouret"
+                            id='imageCedric'>
                         <div class="card__content">
                             <h1 class="card__header">Cedric Priouret</h1>
                             <ul class="social-icons">
                                 <li><a href="https://github.com/CedricPriouret"><i class="fab fa-github"></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/cedric-priouret-40889718b/"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/cedric-priouret-40889718b/"><i
+                                            class="fab fa-linkedin"></i></a></li>
                                 <li><a href="https://twitter.com/Franalol"><i class="fab fa-twitter"></i></a></li>
                             </ul>
                             <p class="card__text">
-                                Originaire de <a id="portVilla">Port-Vila, capitale de Vanuatu</a>, ce musicien a décidé de changer d'orientation à la découverte d'un invention tech
-                                qui changea sa vie: le casque audio. Il n'aura ainsi plus à faire subir ses accords maladroits à son public, et pourra 
+                                Originaire de <a id="portVilla">Port-Vila, capitale de Vanuatu</a>, ce musicien a décidé
+                                de changer d'orientation à la découverte d'un invention tech
+                                qui changea sa vie: le casque audio. Il n'aura ainsi plus à faire subir ses accords
+                                maladroits à son public, et pourra
                                 après chaque jour de formation écouter des artistes du monde entier.
                             </p>
                         </div>
@@ -71,17 +82,21 @@
 
                 <div class="grid__item">
                     <div class="card">
-                        <img class="card__img" src="../Image/VivienMichelesi.png" alt="photo Vivien Michelesi" id='imageVivien'>
+                        <img class="card__img" src="../Image/VivienMichelesi.png" alt="photo Vivien Michelesi"
+                            id='imageVivien'>
                         <div class="card__content">
                             <h1 class="card__header">Vivien Michelesi</h1>
                             <ul class="social-icons">
                                 <li><a href="https://github.com/VivienMichelesi"><i class="fab fa-github"></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/vivien-michelesi-b12065b1/"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/vivien-michelesi-b12065b1/"><i
+                                            class="fab fa-linkedin"></i></a></li>
                                 <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
                             </ul>
                             <p class="card__text">
-                                Originaire d'<a id="anatom">Anatom au Sud de Vanuatu</a>, ce chaman a décidé d'intégrer la Wild Code School quand il a appris 
-                                l'existence d'une boîte à image nommée "écran". En effet, il n'est dès lors plus nécessaire d'entrer en transe pour voir
+                                Originaire d'<a id="anatom">Anatom au Sud de Vanuatu</a>, ce chaman a décidé d'intégrer
+                                la Wild Code School quand il a appris
+                                l'existence d'une boîte à image nommée "écran". En effet, il n'est dès lors plus
+                                nécessaire d'entrer en transe pour voir
                                 le monde différement, Photoshop s'en chargera.
                             </p>
                         </div>
@@ -90,17 +105,21 @@
 
                 <div class="grid__item">
                     <div class="card">
-                        <img class="card__img" src="../Image/JonathanFrancois.jpg" alt="photo Jonathan Francois" id='imageJonathan'>
+                        <img class="card__img" src="../Image/JonathanFrancois.jpg" alt="photo Jonathan Francois"
+                            id='imageJonathan'>
                         <div class="card__content">
                             <h1 class="card__header">Jonathan Francois</h1>
                             <ul class="social-icons">
                                 <li><a href="https://github.com/john32313"><i class="fab fa-github"></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/jonathan-fran%C3%A7ois-9510671aa/"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/jonathan-fran%C3%A7ois-9510671aa/"><i
+                                            class="fab fa-linkedin"></i></a></li>
                                 <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
                             </ul>
                             <p class="card__text">
-                                Originaire des <a id="ilesTorres">Iles Torres au nord de Vanuatu</a>, ce fier guerrier a décidé de devenir développeur Web
-                                quand il a appris qu'une souris n'était pas qu'un nuisible à chasser. Cet outil lui permettra de devenir
+                                Originaire des <a id="ilesTorres">Iles Torres au nord de Vanuatu</a>, ce fier guerrier a
+                                décidé de devenir développeur Web
+                                quand il a appris qu'une souris n'était pas qu'un nuisible à chasser. Cet outil lui
+                                permettra de devenir
                                 un soldat sur la toile sous le pseudonyme de "Vanuatu4Ever".
                             </p>
                         </div>
@@ -114,12 +133,15 @@
                             <h1 class="card__header">Lgiacalo</h1>
                             <ul class="social-icons">
                                 <li><a href="https://github.com/lgiacalo"><i class="fab fa-github"></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/lenagiacalone/"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/lenagiacalone/"><i
+                                            class="fab fa-linkedin"></i></a></li>
                                 <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
                             </ul>
                             <p class="card__text">
-                                Originaire de <a id="malekula">Malekula à l'ouest de Vanuatu</a>, cette bucheronne apprend l'existence de git et sa vie change. 
-                                Elle découvre que les branches ne poussent pas que sur les arbres, et que celles-ci provoquent des noeuds au cerveau.
+                                Originaire de <a id="malekula">Malekula à l'ouest de Vanuatu</a>, cette bucheronne
+                                apprend l'existence de git et sa vie change.
+                                Elle découvre que les branches ne poussent pas que sur les arbres, et que celles-ci
+                                provoquent des noeuds au cerveau.
                                 C'est décidé, elle deviendra experte git.
                             </p>
                         </div>
@@ -140,17 +162,25 @@
                 <li><a href="./apropos.html">A propos</a></li>
                 <li class="li_foot_in_lign">
                     <ul class="ul_foot_in_lign">
-                        <li><a href="https://www.facebook.com"><img src="../Image/Icon_Facebook.png" alt="fb" id="facebook" class="icone"></a></li>
-                        <li><a href="https://www.twitter.com"><img src="../Image/Icon_Twitter.png" alt="twitter" id="twitter" class="icone"></a></li>
-                        <li><a href="https://www.instagram.com"><img src="../Image/Icon_Instagram.png" alt="insta" id="instagram" class="icone"></a></li>
-                        <li><a href="https://www.youtube.com"><img src="../Image/Icon_Youtube.png" alt="ytbe" id="youtube" class="icone"></a></li>
+                        <li><a href="https://www.facebook.com"><img src="../Image/Icon_Facebook.png" alt="fb"
+                                    id="facebook" class="icone"></a></li>
+                        <li><a href="https://www.twitter.com"><img src="../Image/Icon_Twitter.png" alt="twitter"
+                                    id="twitter" class="icone"></a></li>
+                        <li><a href="https://www.instagram.com"><img src="../Image/Icon_Instagram.png" alt="insta"
+                                    id="instagram" class="icone"></a></li>
+                        <li><a href="https://www.youtube.com"><img src="../Image/Icon_Youtube.png" alt="ytbe"
+                                    id="youtube" class="icone"></a></li>
                     </ul>
                 </li>
             </ul>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="apropos.js"></script>
-    <!-- <script src="main.js"></script> -->
+    <script src="../main.js"></script>
+
 </body>
 
 </html>
